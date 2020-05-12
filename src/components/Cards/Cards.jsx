@@ -52,8 +52,9 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
             </Typography>
           </CardContent>
         </Grid>
-      </Grid>
+      </Grid>      
     </div>
+    
   );
 };
 

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Cards, Chart, CountryPicker } from './components';
+import { Cards, Chart, CountryPicker, Footer } from './components';
 import styles from './App.module.css';
 import { fetchData } from './api';
 import logo from './img/logo.png';
@@ -31,8 +31,10 @@ class App extends React.Component {
                 <img alt='COVID-19' className={styles.image} src={logo}/>
                 <Cards data={data} />
                 <CountryPicker handleCountryChange={this.handleCountryChange} />
-                <Chart data={data} country={country}/>
+                <Chart data={data} country={country}/>      
+                <Footer/>          
             </div>
+            
         );
     }
 }

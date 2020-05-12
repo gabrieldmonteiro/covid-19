@@ -57,4 +57,5 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
   );
 };
 
+
 export default Cards;

@@ -67,12 +67,3 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
 
-## Node 17+ (OpenSSL)
-
-CRA 3.4 (webpack 4) fails on Node 17+ with `ERR_OSSL_EVP_UNSUPPORTED`. Set the legacy flag before `yarn start` / `yarn build`:
-
-```
-NODE_OPTIONS=--openssl-legacy-provider
-```
-
-PowerShell: `$env:NODE_OPTIONS="--openssl-legacy-provider"`

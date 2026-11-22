@@ -22,10 +22,20 @@ body{
 }
 
 @media (max-width: 770px){
+    body{
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
     .container{
-        margin: 0 10%;
+        align-items: stretch;
+        height: auto;
+        min-height: 100vh;
+        overflow: visible;
+        margin: 0 4%;
     }
     .image{
         height: 10vh;
+        width: auto;
+        align-self: center;
     }
 }

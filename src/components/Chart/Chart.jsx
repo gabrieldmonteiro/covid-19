@@ -32,6 +32,7 @@ const Chart = ({ data: { confirmed, recovered, deaths }, country }) => {
           ],
         }}
         options={{
+          maintainAspectRatio: false,
           legend: { display: false },
           title: { display: true, text: `Current state in ${country}` },
         }}
@@ -58,6 +59,7 @@ const Chart = ({ data: { confirmed, recovered, deaths }, country }) => {
           },
           ],
         }}
+        options={{ maintainAspectRatio: false }}
       />
     ) : null
   );
